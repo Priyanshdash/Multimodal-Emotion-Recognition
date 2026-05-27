@@ -119,21 +119,88 @@ Fusion:
 - Results/: metrics, confusion matrices, and plots
 - MultiModal_Emotion_Recognition_Report.pdf: full project report
 
-## How to Run
+## Step-by-Step Setup (Copy and Run)
 
-1. Install dependencies:
+Follow these exact steps to run the project on a new system.
+
+### 1. Install prerequisites
+
+- Python 3.9 or newer
+- pip
+- Git (optional, only needed if cloning from GitHub)
+
+### 2. Clone the repository
+
+Open terminal and run:
 
 ```bash
+git clone https://github.com/Priyanshdash/Multimodal-Emotion-Recognition.git
+cd Multimodal-Emotion-Recognition
+```
+
+If your repository folder name is different, use that folder name in the second command.
+
+### 3. Create and activate a virtual environment
+
+Windows (PowerShell):
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+```
+
+Windows (Command Prompt):
+
+```bat
+python -m venv .venv
+.venv\Scripts\activate.bat
+```
+
+macOS/Linux:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+### 4. Install dependencies
+
+```bash
+pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-2. Run the app:
+### 5. Verify model files are present
+
+Make sure these files exist before running:
+
+- models/speech_pipeline/speech_emotion_model.h5
+- models/text_pipeline/text_emotion_model.h5
+- models/fusion_pipeline/fusion_emotion_model.h5
+
+### 6. Run the app
 
 ```bash
 python app.py
 ```
 
-3. Open the Gradio URL shown in the terminal.
+### 7. Open in browser
+
+After startup, Gradio prints a local URL in terminal (usually http://127.0.0.1:7860).
+Open that URL in your browser.
+
+### 8. Test each mode
+
+- speech: upload or record audio
+- text: enter a sentence
+- fusion: provide both audio and text
+
+The app returns predicted emotion and class probabilities.
+
+### 9. Common first-run note
+
+On first run, Hugging Face models may be downloaded. This can take time depending
+on internet speed.
 
 ## Checkpoint Files Required
 
