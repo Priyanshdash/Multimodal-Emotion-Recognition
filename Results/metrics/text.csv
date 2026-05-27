@@ -1,0 +1,11 @@
+Emotion,Precision,Recall,F1-Score,Support
+angry,0,0,0,80
+disgust,0.14,1,0.25,80
+fear,0,0,0,80
+happy,0,0,0,80
+neutral,0,0,0,80
+ps (pleasant_surprise),0,0,0,80
+sad,0,0,0,80
+Accuracy,,,0.14,560
+Macro Avg,0.02,0.14,0.04,560
+Weighted Avg,0.02,0.14,0.04,560
