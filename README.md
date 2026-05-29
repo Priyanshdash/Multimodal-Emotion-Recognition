@@ -201,6 +201,7 @@ The app returns predicted emotion and class probabilities.
 
 On first run, Hugging Face models may be downloaded. This can take time depending
 on internet speed.
+For the text mode first click on classify and then try it out
 
 ## Checkpoint Files Required
 
